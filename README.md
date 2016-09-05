@@ -5,7 +5,8 @@ UDO - graphictuner_jm.csd     =====
 UDO - recursive_mixer_jm.csd  ===== 
 Basic Feedback Model.csd      ===== 
 text.txt                      ===== Text file displayed by Room Tuner
-31bands.png                   ===== Image file
+31bands.png                   ===== Image skin file
+Suite.jpg                     ===== Brochure image
 1.wav                         ===== Room IR
 2.wav                         ===== Hall IR
 3.wav                         ===== Plate IR
