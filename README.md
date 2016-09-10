@@ -3,10 +3,11 @@
 Files included:
 UDO - graphictuner_jm.csd     ===== 
 UDO - recursive_mixer_jm.csd  ===== 
+UDO - recursive_mixer_jm (with meters).csd  ===== (some known issues) (ksmps lowered to 32)
 Basic Feedback Model.csd      ===== 
 text.txt                      ===== Text file displayed by Room Tuner
 31bands.png                   ===== Image skin file
-Suite.jpg                     ===== Brochure image
+Suite_1.jpg                   ===== Brochure image
 1.wav                         ===== Room IR
 2.wav                         ===== Hall IR
 3.wav                         ===== Plate IR
