@@ -11,7 +11,7 @@ image bounds(550, 185, 105, 188), 									colour(60, 60, 60)
 image bounds(33, 10, 624, 25), 		file("31bands.png")
 ; Start and Reverb
 button bounds(20, 337, 100, 30),	channel("Audio"),				text("Audio Off", "Audio On"), fontcolour:1(128, 0, 0), fontcolour:0(200, 200, 200),				value(1)
-combobox bounds(20, 235, 100, 60),	channel("Type"),				items("Room", "Hall", "Plate"), caption("Reverb"), colour(9, 214, 214, 200), fontcolour("black")
+combobox bounds(20, 235, 100, 60),	channel("Type"),				items("Room", "Hall", "Plate", "RehearsalRoom"), caption("Reverb"), colour(9, 214, 214, 200), fontcolour("black")
 button bounds(20, 301, 100, 30), 	channel("Reverb"),				text("Reverb Off", "Reverb On"), value(1), fontcolour:1(9, 214, 214, 200), fontcolour:0(200, 200, 200)
 ; EQ & Master
 button bounds(20, 190, 100, 30),	channel("EQBypass"),			text("EQ Off", "EQ On"), value(1), fontcolour:1(9, 214, 214, 200), fontcolour:0(200, 200, 200)
@@ -90,7 +90,7 @@ endif 														;
 RESTART:													;
 
 iType=i(kType)
-SVerb sprintfk "%d.wav", (iType<1? 1:iType) 				; This avoids a value of 0. The IRs contained in the folder should be named "1.wav, "2.wav", "3.wav"
+SVerb sprintfk "%d.wav", (iType<1? 1:iType) 				; This avoids a value of 0. The IRs contained in the folder should be named "1.wav, "2.wav", "3.wav", "4.wav"
 
 kAudio chnget "Audio"
 if changed(kAudio)==0 then									; on/off button
